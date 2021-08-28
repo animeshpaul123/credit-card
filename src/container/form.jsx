@@ -4,7 +4,7 @@ import { Form, Button } from 'react-bootstrap'
 import Input from '../components/Input'
 import './form.scss'
 import { DEFAULT_CARD_FORMAT, getCardType, hasLetters } from '../cardTypes'
-
+const reduceTop = window.innerWidth > 991 ? 67 : 58
 function hashToNumber(value) {
     let newval = ''
     // let undefinedValue = 0
@@ -88,7 +88,7 @@ export default function CardForm(props) {
 
     const onNameFocus = () => {
         if (outlineRef?.current && numberRef?.current && nameRef?.current && dateRef?.current) {
-            outlineRef.current.style.top = (nameRef.current.getBoundingClientRect().top - 46) + "px"
+            outlineRef.current.style.top = (nameRef.current.getBoundingClientRect().top - reduceTop) + "px"
             outlineRef.current.style.width = (nameRef.current.getBoundingClientRect().width + 180) + "px"
             outlineRef.current.style.left = "10px"
             outlineRef.current.style.height = "40px"
@@ -111,7 +111,7 @@ export default function CardForm(props) {
 
         if (outlineRef?.current && numberRef?.current && nameRef?.current && dateRef?.current) {
             console.log(dateRef?.current.getBoundingClientRect())
-            outlineRef.current.style.top = (dateRef.current.getBoundingClientRect().top - 46) + "px"
+            outlineRef.current.style.top = (dateRef.current.getBoundingClientRect().top - reduceTop) + "px"
             outlineRef.current.style.left = "280px"
             outlineRef.current.style.width = "18%"
             outlineRef.current.style.height = "40px"
