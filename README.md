@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Deployed site: (Netlify)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The site is deployed to [https://focused-benz-03eca0.netlify.app/](https://focused-benz-03eca0.netlify.app/).
 
 ## Available Scripts
 
