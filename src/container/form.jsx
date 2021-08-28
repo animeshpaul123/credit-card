@@ -1,9 +1,9 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useRef, useState } from 'react'
 import CreditCard from '../components/creditCard/credit-card'
 import { Form, Button } from 'react-bootstrap'
 import Input from '../components/Input'
 import './form.scss'
-import { DEFAULT_CARD_FORMAT, getCardType, isNumber, hasLetters } from '../cardTypes'
+import { DEFAULT_CARD_FORMAT, getCardType, hasLetters } from '../cardTypes'
 
 function hashToNumber(value) {
     let newval = ''

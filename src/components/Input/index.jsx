@@ -5,17 +5,7 @@ import { Form } from 'react-bootstrap'
 import './style.scss'
 
 export default function Input({ label, type, ...rest }) {
-    const [showEye, setShowEye] = useState(false)
-
-    const onChangeEye = () => {
-        setShowEye((setShowEye) => !setShowEye)
-    }
-    // const renderEye = () => {
-    //     if (!showEye) {
-    //         return <AiOutlineEye onClick={onChangeEye} className="eye-open" />
-    //     }
-    //     return <AiOutlineEyeInvisible onClick={onChangeEye} className="eye-open" />
-    // }
+    const [showEye] = useState(false)
 
     return (
         <Form.Group controlId="formFile" className="mb-3">

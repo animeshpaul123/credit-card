@@ -1,4 +1,4 @@
-import React, { forwardRef } from 'react'
+import React from 'react'
 import backgroundImage from '../../assets/images/16.jpeg'
 import backgroundImage2 from '../../assets/images/7.jpeg'
 import Chip from '../../assets/images/chip.png'
